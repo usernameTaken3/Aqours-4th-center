@@ -5,15 +5,14 @@ def findchar(k):
 	x = random.randint(0,200)
 	print(k[x]) #shows the value of the index chosen
 	#change the range to alter probabilities
-	if 1<= k[x] <=70:
+	if 1<= k[x] <=100:
 		return 'Hanamaru'
-	elif 71<= k[x] <=400:
-		return 'Ruby'
-	else:
+	elif 101<= k[x] <=700:
 		return 'Yoshiko'
+	else:
+		return 'Ruby'
 
 #initialization
-H=R=Y=0
 k=[]
 
 #integers in range 1-1000 will be generated for 200 times and inserted into array k
